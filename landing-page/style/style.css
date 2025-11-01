@@ -1,0 +1,167 @@
+
+
+h1{
+
+color: var(--color-darkBlue);
+font-family: var(--font-ArchivoBlack);
+font-weight:1000;
+letter-spacing: -4px;
+}
+
+
+.links{
+
+
+font-family: var(--font-EncodeSansCondensed);
+text-transform: uppercase;
+text-align: left;
+}
+
+.links h4{
+color: var(--color-darkBlue);
+
+
+
+}
+
+.links a{
+    
+display: flex;
+flex-direction: column;
+color: var(--color-lightBlue);
+font-size: x-small;
+
+
+
+
+}
+
+.description {
+display: flex;
+flex-direction: column;
+
+
+
+}
+.paragraphs{
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    color: var(--color-darkBlue);
+    font-family: var(--font-EncodeSansCondensed);
+ 
+}
+p{
+ 
+   flex: 1; 
+
+}
+
+.image-container .paragraphs{
+    font-size: var(--h4);
+font-family: var(--font-EncodeSansCondensed);
+letter-spacing: -1px;
+}
+
+.horizontal-slider {
+    display: flex;
+    align-items: center;
+  width: 100%;
+  overflow: hidden;
+  border-top: 2px solid var(--color-orange); 
+    border-bottom: 2px solid var(--color-orange); 
+
+  padding: 10px 0;
+}
+
+.slider-track {
+  display: flex;
+  width: max-content; 
+  animation: scroll 25s linear infinite; 
+}
+
+.slide-text {
+  flex: none;
+  white-space: nowrap; 
+  margin: 0;
+  padding: 0 50px; 
+  font-size: xx-large;
+  font-weight: bold;
+  color: var(--color-orange);
+}
+
+
+
+
+.img-card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 300px;
+width: 250px;
+border: solid 1px var(--color-lightBlue);
+
+}
+
+
+.img-card img {
+   
+ padding-top: 10px ;
+  width: 90%;
+  height: 90%;
+}  
+
+.img-card a{
+color: var(--color-orange);
+text-transform: uppercase;
+font-family: var(--font-ArchivoBlack);
+letter-spacing: -2px;
+
+}
+
+
+
+
+
+
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+
+@media (max-width: 768px) {
+    .paragraphs p {
+        font-size: 0.8rem; 
+    }
+
+    .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+    .paragraphs {
+        flex-direction: column; 
+    }
+
+    .paragraphs p {
+        font-size: 0.8rem;
+    }
+    .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}

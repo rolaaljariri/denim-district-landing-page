@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+--h1:35px;
+--h2:32px;
+--h3:28px;
+--h4:24px;
+--h5:20px;
+--h6:16px;
+
+
+--color-black: #332e2a;
+--color-darkBlue:#222f37;
+--color-orange:#f64810;
+--color-lightGray:#dadddc;
+--color-darkGray:#596165;
+--color-lightBlue:#8ea7b4;
+
+
+
+--font-ArchivoBlack: "Archivo Black", sans-serif;
+--font-EncodeSansCondensed:"Encode Sans Condensed", sans-serif;
+
+
+
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    
+    width: 100%;
+    background-color: var(--color-lightGray);
+    padding: 20px;
+
+   
+}
+
+ul{
+   list-style-type:none ;
+   padding: 0;
+   margin: 0;
+}
+a{
+
+    text-decoration: none;
+}
+
+li {
+  display: flex;            
+  align-items: center;       
+  gap: 6px;                  
+}

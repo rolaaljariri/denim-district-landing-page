@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/images/denimDistrict.png">
+    <title>Denim district</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style/designSystem.css">
+    <link rel="stylesheet" href="style/style.css">
+<style>
+    
+.grid-container
+{
+display: grid;
+grid-template-rows: auto auto auto auto auto;
+grid-template-columns: 1fr ;
+gap: 1em;
+grid-template-areas: "header"
+"description"
+"bar"
+"image"
+
+"gallery";
+
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px  solid var(--color-lightBlue);
+    padding: 0px 0px 0px 20px;
+}
+.description-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--color-lightBlue);
+    gap: 20%;
+    text-align: center;
+   padding: 20px;
+}
+.image-container{
+display: flex;
+flex-direction:row;
+justify-content: space-evenly;
+align-items: center;
+    border-bottom: solid var(--color-lightBlue);
+
+text-align: left;
+padding: 20px;
+gap: 50px;
+
+
+}
+.horizontal-bar{
+     border: 2px solid var(--color-orange);
+ 
+}
+.gallery{
+    display: grid;
+grid-template-columns:300px 300px 300px 300px;    gap: 20px;
+    justify-content: center;
+  
+   margin-bottom: 60px;
+   
+
+  
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+    <div class="grid-container">
+<div class="header-container" style="grid-area: header">
+
+
+<div class="title" >
+    <h1>ABOUT US</h1>
+
+
+
+</div>
+<div class="logo">
+    <img src="src/images/denimDistrict.png" alt="logo here" height="100PX">
+</div>
+
+
+</div>
+<div class="description-container" style="grid-area: description" >
+    
+<div class="links" >
+
+    <h4>FOUNDERS</h4>
+    <ul>
+<li> <a href="">michael villa sison <i class="bi bi-arrow-right"></i></a></i></li>
+
+<li> <a href="">laura rodriogues <i class="bi bi-arrow-right"></i></a>  </i></li>
+ 
+</ul>
+
+    <h4>SOCIAL</h4>
+   <ul>
+    <li><a href="">instagram<i class="bi bi-arrow-right"></i></a>    </i></li>
+
+    <li><a href="">x<i class="bi bi-arrow-right"></i></a></i></li>
+    
+   </ul>
+
+   <h4>CONTACT</h4>
+   <ul>
+    <li><a href="">phone <i class="bi bi-arrow-right"></i></a></i></li>
+    
+    <li><a href="">email<i class="bi bi-arrow-right"></i></a> </i></li>
+   
+   </ul>
+</div>
+
+<div class="description" >
+<h1>Lorem ipsum dolor sit amet consectetur.</h1>
+<div class="paragraphs">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ab recusandae praesentium perspiciatis quis error delectus maiores mollitia, aspernatur adipisci, sed laudantium perferendis vel repellat corrupti odio? Ullam porro esse quibusdam quam cumque itaque dignissimos in. Ipsum inventore corrupti eligendi itaque saepe incidunt aliquam odit hic officiis consequuntur, nisi nostrum aliquid ipsa! Est sint obcaecati dolore, quia, accusamus quisquam quidem incidunt, quam voluptas pariatur reiciendis dolores minima placeat beatae! Necessitatibus!</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique eaque earum ipsum doloremque. Mollitia eveniet quidem, dicta vel nemo rem neque quo? Ab nostrum, placeat at unde asperiores ipsum eaque quas. Ab voluptatibus commodi beatae nemo id perspiciatis aperiam, debitis, voluptates aliquam pariatur neque. Velit sunt, commodi soluta temporibus ipsa aliquam. Veniam sint officia ullam quis harum nobis omnis! Eaque.</p>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="image-container" style="grid-area: image">
+    <div class="image">
+<img src="src/images/GIF.gif" alt="big image here" height="500">
+</div>
+
+
+    
+<div class="paragraphs">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ab recusandae praesentium perspiciatis quis error delectus maiores mollitia, aspernatur adipisci, sed laudantium perferendis vel repellat corrupti odio? Ullam porro esse quibusdam quam cumque itaque dignissimos in. Ipsum inventore corrupti eligendi itaque saepe incidunt aliquam odit hic officiis consequuntur, nisi nostrum aliquid ipsa! Est sint obcaecati dolore, quia, accusamus quisquam quidem incidunt, quam voluptas pariatur reiciendis dolores minima placeat beatae! Necessitatibus!</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique eaque earum ipsum doloremque. Mollitia eveniet quidem, dicta vel nemo rem neque quo? Ab nostrum, placeat at unde asperiores ipsum eaque quas. Ab voluptatibus commodi beatae nemo id perspiciatis aperiam, debitis, voluptates aliquam pariatur neque. Velit sunt, commodi soluta temporibus ipsa aliquam. Veniam sint officia ullam quis harum nobis omnis! Eaque.</p>
+    
+
+</div>
+
+</div>
+
+
+<div class="horizontal-slider">
+  <div class="slider-track">
+    <p class="slide-text">
+      Denim Redefined. Street Style Vibes. Comfort Meets Fashion. Everyday Cool. Classic Never Dies. Tailored for You. Effortless Edge. Iconic Threads. Sustainable Denim. Your Signature Look.
+    </p>
+    <p class="slide-text">
+      Denim Redefined. Street Style Vibes. Comfort Meets Fashion. Everyday Cool. Classic Never Dies. Tailored for You. Effortless Edge. Iconic Threads. Sustainable Denim. Your Signature Look.
+    </p>
+  </div>
+</div>
+
+
+<div class="gallery" style="grid-area: gallery ;">
+    
+  <div class="img-card">
+<img src="src/images/img-8.jpg" alt="">
+<a href="">view <i class="bi bi-arrow-right"></i></a>
+  </div>
+  <div class="img-card">
+<img src="src/images/img-1.jpg" alt="">
+<a href="">view <i class="bi bi-arrow-right"></i></a>
+
+  </div>
+  <div class="img-card">
+<img src="src/images/img-2.jpg" alt="">
+<a href="">view <i class="bi bi-arrow-right"></i></a>
+
+  </div>
+  <div class="img-card">
+<img src="src/images/img-3.jpg" alt="">
+<a href="">view <i class="bi bi-arrow-right"></i></a>
+
+  </div>
+  <div class="img-card">
+    <img src="src/images/img-4.jpg" alt="">
+    <a href="">view <i class="bi bi-arrow-right"></i></a>
+
+
+  </div>
+  <div class="img-card">
+<img src="src/images/img-5.jpg" alt="">
+<a href="">view <i class="bi bi-arrow-right"></i></a>
+
+  </div>
+  <div class="img-card">
+<img src="src/images/img-6.jpg" alt="">
+<a href="">view <i class="bi bi-arrow-right"></i></a>
+
+  </div>
+  <div class="img-card">
+<img src="src/images/img-7.jpg" alt="">
+<a href="">view <i class="bi bi-arrow-right"></i></a>
+
+  </div>
+
+</div>
+</div>
+</body>
+</html>
