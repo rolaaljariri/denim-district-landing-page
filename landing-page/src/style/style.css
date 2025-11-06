@@ -1,4 +1,68 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  grid-template-areas:
+    "header"
+    "description"
+    "bar"
+    "image"
+    "gallery";
+}
 
+
+.header-container {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-lightBlue);
+  padding: 0px 0px 0px 20px;
+}
+
+.description-container {
+  grid-area: description;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid var(--color-lightBlue);
+  gap: 20%;
+  text-align: center;
+  padding: 20px;
+}
+
+.horizontal-slider {
+ grid-area: bar;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  border-top: 2px solid var(--color-orange);
+  border-bottom: 2px solid var(--color-orange);
+  padding: 10px 0;
+}
+
+.image-container {
+  grid-area: image;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: solid var(--color-lightBlue);
+  text-align: left;
+  padding: 20px;
+  gap: 50px;
+}
+
+.gallery {
+  grid-area: gallery;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
 
 h1{
 
@@ -63,16 +127,6 @@ font-family: var(--font-EncodeSansCondensed);
 letter-spacing: -1px;
 }
 
-.horizontal-slider {
-    display: flex;
-    align-items: center;
-  width: 100%;
-  overflow: hidden;
-  border-top: 2px solid var(--color-orange); 
-    border-bottom: 2px solid var(--color-orange); 
-
-  padding: 10px 0;
-}
 
 .slider-track {
   display: flex;
@@ -121,18 +175,11 @@ letter-spacing: -2px;
 }
 
 
-
-
-
-
-
-
-
 @keyframes scroll {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-50%); 
   }
 }
@@ -143,10 +190,6 @@ letter-spacing: -2px;
     }
 
     .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-  .gallery {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
@@ -164,4 +207,8 @@ letter-spacing: -2px;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+}
+
+.logo img{
+  height: 100px;
 }
